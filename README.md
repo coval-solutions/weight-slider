@@ -1,7 +1,15 @@
 <h1 align="center">Weight Slider Widget for Flutter</h1>
-<p align="center">![weight-slider](https://raw.githubusercontent.com/coval-solutions/weight-slider/master/images/1.gif)</p>
+<p align="center">
+  <img src="https://api.codemagic.io/apps/5e1b33e348f5bc0b2ae8d4c4/5e1b33e348f5bc0b2ae8d4c3/status_badge.svg" />
+  <a href="https://raw.githubusercontent.com/coval-solutions/weight-slider/master/LICENSE">
+    <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-yellow.svg" target="_blank" />
+  </a>
+</p>
 
-## Usage
+## ✨ Demo
+<p align="center"><img width="20%" src="https://raw.githubusercontent.com/coval-solutions/weight-slider/master/images/1.gif" alt="weight slider"/></p>
+
+## 🚀 Usage
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
   int weight = 70;
@@ -25,6 +33,5 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 ```
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+## 📝 License
+This project is [MIT](https://raw.githubusercontent.com/coval-solutions/weight-slider/master/LICENSE) licensed.

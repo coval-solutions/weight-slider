@@ -1,8 +1,7 @@
 name: weight_slider
 description: Customisable slider widget for retrieving weight.
 version: 1.0.0
-author: Coval Solutions Ltd
-homepage: covalsolutions.com
+homepage: https://covalsolutions.com
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
