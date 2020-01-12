@@ -101,7 +101,7 @@ class WeightSliderInternal extends StatelessWidget {
     int indexOfMiddleElement = _offsetToMiddleIndex(offset);
     int middleValue = _indexToValue(indexOfMiddleElement);
     middleValue = math.max(minValue, math.min(maxValue, middleValue));
-    
+
     return middleValue;
   }
 
@@ -116,7 +116,7 @@ class WeightSliderInternal extends StatelessWidget {
         this.onChanged(middleValue);
       }
     }
-    
+
     return true;
   }
 }
