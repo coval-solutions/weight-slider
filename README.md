@@ -1,6 +1,9 @@
 <h1 align="center">Weight Slider Widget for Flutter</h1>
 <p align="center">
   <img src="https://api.codemagic.io/apps/5e1b33e348f5bc0b2ae8d4c4/5e1b33e348f5bc0b2ae8d4c3/status_badge.svg" />
+  <a href="https://pub.dev/packages/weight_slider">
+    <img alt="Pub Version" src="https://img.shields.io/pub/v/weight_slider">
+  </a>
   <a href="https://raw.githubusercontent.com/coval-solutions/weight-slider/master/LICENSE">
     <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-yellow.svg" target="_blank" />
   </a>

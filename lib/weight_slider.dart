@@ -11,9 +11,15 @@ class WeightSlider extends StatelessWidget {
   final double width;
   final ValueChanged<int> onChanged;
 
-  const WeightSlider({Key key, this.weight = 80, this.minWeight = 30, this.maxWeight = 130, this.width, @required this.onChanged})
+  const WeightSlider(
+      {Key key,
+      this.weight = 80,
+      this.minWeight = 30,
+      this.maxWeight = 130,
+      this.width,
+      @required this.onChanged})
       : super(key: key);
-  
+
   @override
   Widget build(BuildContext context) {
     return Padding(

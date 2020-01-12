@@ -15,8 +15,7 @@ class WeightBackground extends StatelessWidget {
           height: 100.0,
           decoration: BoxDecoration(
             color: Color.fromRGBO(244, 244, 244, 1.0),
-            borderRadius:
-                new BorderRadius.circular(50.0),
+            borderRadius: new BorderRadius.circular(50.0),
           ),
           child: child,
         ),
