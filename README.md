@@ -28,7 +28,7 @@ class _MyHomePageState extends State<MyHomePage> {
             weight: weight,
             minWeight: 40,
             maxWeight: 120,
-            onChanged: (val) => setState(() => weight = val),
+            onChange: (val) => setState(() => this.weight = val),
           ),
         ),
     );

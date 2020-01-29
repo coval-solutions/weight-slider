@@ -9,7 +9,7 @@ class WeightSliderInternal extends StatelessWidget {
     @required this.minValue,
     @required this.maxValue,
     @required this.value,
-    @required this.onChanged,
+    @required this.onChange,
     @required this.width,
   })  : scrollController = new ScrollController(
           initialScrollOffset: (value - minValue) * width / 3,
@@ -19,7 +19,7 @@ class WeightSliderInternal extends StatelessWidget {
   final int minValue;
   final int maxValue;
   final int value;
-  final ValueChanged<int> onChanged;
+  final ValueChanged<int> onChange;
   final double width;
   final ScrollController scrollController;
 
@@ -112,8 +112,8 @@ class WeightSliderInternal extends StatelessWidget {
         _animateTo(middleValue);
       }
 
-      if (middleValue != value && this.onChanged != null) {
-        this.onChanged(middleValue);
+      if (middleValue != value && this.onChange != null) {
+        this.onChange(middleValue);
       }
     }
 

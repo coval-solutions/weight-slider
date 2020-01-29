@@ -22,6 +22,7 @@ class WeightBackground extends StatelessWidget {
         SvgPicture.asset(
           'images/arrow.svg',
           package: 'weight_slider',
+          color: Theme.of(context).primaryColor,
         ),
       ],
     );
