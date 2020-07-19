@@ -1,9 +1,7 @@
-# Automatically generated on 2020-01-12 UTC from https://codemagic.io/app/5e1b33e348f5bc0b2ae8d4c4/settings
-# Note that this configuration is not an exact match to UI settings. Review and adjust as necessary.
-
 workflows:
-  default-workflow:
-    name: Default Workflow
+  development:
+    name: Development
+    max_build_duration: 60
     environment:
       flutter: stable
     cache:
@@ -12,16 +10,18 @@ workflows:
     triggering:
       events:
         - push
-        - tag
+        - pull_request
       branch_patterns:
         - pattern: master
           include: true
           source: false
+        - pattern: master
+          include: true
+          source: true
+      cancel_previous_builds: true
     scripts:
       - flutter packages pub get
-    artifacts:
-      - flutter_drive.log
     publishing:
       slack:
-        channel: '#projects'
+        channel: "#builds"
         notify_on_build_start: true
