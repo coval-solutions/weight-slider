@@ -18,6 +18,7 @@ workflows:
         - pattern: master
           include: true
           source: true
+      cancel_previous_builds: true
     scripts:
       - flutter packages pub get
     publishing:
