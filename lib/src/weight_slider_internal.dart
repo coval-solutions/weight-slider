@@ -4,24 +4,26 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
 class WeightSliderInternal extends StatelessWidget {
+  final int minValue;
+  final int maxValue;
+  final int value;
+  final String unit;
+  final ValueChanged<int> onChange;
+  final double width;
+  final ScrollController scrollController;
+
   WeightSliderInternal({
     Key key,
     @required this.minValue,
     @required this.maxValue,
     @required this.value,
+    @required this.unit,
     @required this.onChange,
     @required this.width,
   })  : scrollController = new ScrollController(
           initialScrollOffset: (value - minValue) * width / 3,
         ),
         super(key: key);
-
-  final int minValue;
-  final int maxValue;
-  final int value;
-  final ValueChanged<int> onChange;
-  final double width;
-  final ScrollController scrollController;
 
   double get itemExtent => width / 3;
 
@@ -49,7 +51,9 @@ class WeightSliderInternal extends StatelessWidget {
                   onTap: () => _animateTo(itemValue, durationMillis: 50),
                   child: FittedBox(
                     child: Text(
-                      itemValue.toString(),
+                      itemValue != value
+                          ? itemValue.toString()
+                          : itemValue.toString() + this.unit,
                       style: _getTextStyle(context, itemValue),
                     ),
                     fit: BoxFit.scaleDown,
