@@ -2,12 +2,13 @@ library weight_slider;
 
 import 'package:flutter/material.dart';
 import 'package:weight_slider/src/weight_slider_background.dart';
-import 'package:weight_slider/src/weight_slider_interal.dart';
+import 'package:weight_slider/src/weight_slider_internal.dart';
 
 class WeightSlider extends StatelessWidget {
   final int weight;
   final int minWeight;
   final int maxWeight;
+  final String unit;
   final double width;
   final ValueChanged<int> onChange;
 
@@ -16,6 +17,7 @@ class WeightSlider extends StatelessWidget {
       this.weight = 80,
       this.minWeight = 30,
       this.maxWeight = 130,
+      this.unit = 'kg',
       this.width,
       @required this.onChange})
       : super(key: key);
@@ -33,6 +35,7 @@ class WeightSlider extends StatelessWidget {
                     minValue: this.minWeight,
                     maxValue: this.maxWeight,
                     value: this.weight,
+                    unit: this.unit,
                     onChange: this.onChange,
                     width: this.width ?? constraints.maxWidth,
                   );

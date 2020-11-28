@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.0
+
+  * Upgrade the `flutter_svg` dependency from, `^0.17.4` to `^0.19.1`
+  * Added example app
+  * Added `unit` parameter and display alongside the current value (default: `kg`)
+
 ## 1.1.0
 
   * Added Flutter dependency requirements, `>=1.6.7 <2.0.0`
