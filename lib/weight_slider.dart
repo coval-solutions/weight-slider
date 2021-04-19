@@ -24,23 +24,20 @@ class WeightSlider extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.all(64),
-      child: WeightBackground(
-        child: LayoutBuilder(
-          builder: (context, constraints) {
-            return constraints.isTight
-                ? Container()
-                : WeightSliderInternal(
-                    minValue: this.minWeight,
-                    maxValue: this.maxWeight,
-                    value: this.weight,
-                    unit: this.unit,
-                    onChange: this.onChange,
-                    width: this.width ?? constraints.maxWidth,
-                  );
-          },
-        ),
+    return WeightBackground(
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          return constraints.isTight
+              ? Container()
+              : WeightSliderInternal(
+                  minValue: this.minWeight,
+                  maxValue: this.maxWeight,
+                  value: this.weight,
+                  unit: this.unit,
+                  onChange: this.onChange,
+                  width: this.width ?? constraints.maxWidth,
+                );
+        },
       ),
     );
   }
