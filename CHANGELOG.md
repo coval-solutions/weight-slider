@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.1
+
+  * Upgrade the `flutter_svg` dependency from, `^0.19.1` to `^0.21.0+1`
+  * Removed padding from `WeightSlider`, allowing for flexibility
+  * Updated `example` to use the removed padding
+
 ## 1.2.0
 
   * Upgrade the `flutter_svg` dependency from, `^0.17.4` to `^0.19.1`

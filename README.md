@@ -24,7 +24,9 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: WeightSlider(
+        child: Padding(
+          padding: EdgeInsets.all(64),
+          child: WeightSlider(
             weight: weight,
             minWeight: 40,
             maxWeight: 120,
@@ -32,6 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
             unit: 'kg', // optional
           ),
         ),
+      ),
     );
   }
 }

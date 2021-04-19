@@ -37,12 +37,15 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: WeightSlider(
-          weight: weight,
-          minWeight: 40,
-          maxWeight: 120,
-          onChange: (val) => setState(() => this.weight = val),
-          unit: 'kg', // optional
+        child: Padding(
+          padding: EdgeInsets.all(64),
+          child: WeightSlider(
+            weight: weight,
+            minWeight: 40,
+            maxWeight: 120,
+            onChange: (val) => setState(() => this.weight = val),
+            unit: 'kg', // optional
+          ),
         ),
       ),
     );
