@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.2
+
+  * Replaced `width` property with a changeable `height` property, you can adjust the width via outer padding
+
 ## 1.2.1
 
   * Upgrade the `flutter_svg` dependency from, `^0.19.1` to `^0.21.0+1`

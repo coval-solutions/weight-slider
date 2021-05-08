@@ -9,7 +9,7 @@ class WeightSlider extends StatelessWidget {
   final int minWeight;
   final int maxWeight;
   final String unit;
-  final double width;
+  final double height;
   final ValueChanged<int> onChange;
 
   const WeightSlider(
@@ -18,13 +18,14 @@ class WeightSlider extends StatelessWidget {
       this.minWeight = 30,
       this.maxWeight = 130,
       this.unit = 'kg',
-      this.width,
+      this.height = 100,
       @required this.onChange})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return WeightBackground(
+      height: this.height,
       child: LayoutBuilder(
         builder: (context, constraints) {
           return constraints.isTight
@@ -35,7 +36,7 @@ class WeightSlider extends StatelessWidget {
                   value: this.weight,
                   unit: this.unit,
                   onChange: this.onChange,
-                  width: this.width ?? constraints.maxWidth,
+                  width: constraints.maxWidth,
                 );
         },
       ),
