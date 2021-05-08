@@ -3,8 +3,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 class WeightBackground extends StatelessWidget {
   final Widget child;
+  final double height;
 
-  const WeightBackground({Key key, this.child}) : super(key: key);
+  const WeightBackground({Key key, this.child, this.height}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +13,7 @@ class WeightBackground extends StatelessWidget {
       alignment: Alignment.bottomCenter,
       children: <Widget>[
         Container(
-          height: 100.0,
+          height: this.height,
           decoration: BoxDecoration(
             color: Color.fromRGBO(244, 244, 244, 1.0),
             borderRadius: new BorderRadius.circular(50.0),
