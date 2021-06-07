@@ -13,13 +13,13 @@ class WeightSliderInternal extends StatelessWidget {
   final ScrollController scrollController;
 
   WeightSliderInternal({
-    Key key,
-    @required this.minValue,
-    @required this.maxValue,
-    @required this.value,
-    @required this.unit,
-    @required this.onChange,
-    @required this.width,
+    Key? key,
+    required this.minValue,
+    required this.maxValue,
+    required this.value,
+    required this.unit,
+    required this.onChange,
+    required this.width,
   })  : scrollController = new ScrollController(
           initialScrollOffset: (value - minValue) * width / 3,
         ),

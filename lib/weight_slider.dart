@@ -13,13 +13,13 @@ class WeightSlider extends StatelessWidget {
   final ValueChanged<int> onChange;
 
   const WeightSlider(
-      {Key key,
+      {Key? key,
       this.weight = 80,
       this.minWeight = 30,
       this.maxWeight = 130,
       this.unit = 'kg',
       this.height = 100,
-      @required this.onChange})
+      required this.onChange})
       : super(key: key);
 
   @override
