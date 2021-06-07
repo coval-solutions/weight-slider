@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.0-nullsafety+1
+
+* Initial release with null safety
+
 ## 1.2.2
 
   * Replaced `width` property with a changeable `height` property, you can adjust the width via outer padding
